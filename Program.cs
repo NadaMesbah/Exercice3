@@ -30,9 +30,19 @@ namespace Exo3
         {
             return this.y;
         }
+        public int Distance(Point a, Point b)
+        {
+
+            int distance;
+            a = new Point(x,y);
+            b = new Point(x,y);
+            distance = (int)Math.Sqrt(Math.Pow(a.x - b.x, 2) - Math.Pow(a.y - b.y, 2));
+            return distance;
+
+        }
         public bool Egalite(Point p)
         {
-            if (p.x==this.x && p.y==this.y)
+            if (p.x == this.x && p.y == this.y)
             {
                 return true;
             }
